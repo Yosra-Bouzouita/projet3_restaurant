@@ -317,8 +317,9 @@ h2 {
   font-size: 1.9em;
   color: transparent;
 }
-.restaurants__lapalette .lienhebergement .paragrapheimage .fas:active {
+.restaurants__lapalette .lienhebergement .paragrapheimage .fas:hover {
   color: #9356dc;
+  animation-duration: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */

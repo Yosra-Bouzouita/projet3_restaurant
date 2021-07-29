@@ -8,22 +8,22 @@ $body-delay: $loader-dur;
   justify-content: center;
   flex-direction: column-reverse;
 
-    &__container {
-      border: 16px solid #f3f3f3;
-      border-top: 16px solid #3498db;
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      animation: spin $loader-dur linear infinite;
-   }
+  &__container {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin $loader-dur linear infinite;
+  }
 }
 
-     @keyframes spin {
-     0% {
-      transform: rotate(0deg);
- }
-    100% {
-      transform: rotate(360deg);
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @mixin body-animation {
@@ -56,7 +56,7 @@ $body-delay: $loader-dur;
     @include body-animation;
     @include body-logo;
     .photo {
-       width: 100%;
+      width: 100%;
       @media all and (max-width: 800px) {
         width: 150%;
         position: relative;
@@ -68,19 +68,19 @@ $body-delay: $loader-dur;
 .form {
   &__localisation {
     & input {
-       width: 98%;
-       padding-top: 2rem;
-       padding-bottom: 2rem;
-       position: absolute;
-       top: 150px;
-       background-color: rgb(240, 240, 240);
-       border: none;
-       font-size: 100%;
-       font-weight: bold;
-       text-align: center;
-       border-top: solid rgb(226, 226, 226);
-       @include body-animation;
-       @include body-logo;
+      width: 98%;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      position: absolute;
+      top: 150px;
+      background-color: rgb(240, 240, 240);
+      border: none;
+      font-size: 100%;
+      font-weight: bold;
+      text-align: center;
+      border-top: solid rgb(226, 226, 226);
+      @include body-animation;
+      @include body-logo;
     }
   }
 }
@@ -116,26 +116,26 @@ $body-delay: $loader-dur;
   top: 235px;
   @include body-animation;
   @include body-logo;
-    &__paragraphe1 {
-      font-weight: bold;
-      font-size: 1.5em;
+  &__paragraphe1 {
+    font-weight: bold;
+    font-size: 1.5em;
   }
-    &__paragraphe2 {
-      font-weight: normal;
-      font-size: 1.3em;
-      color: gray;
+  &__paragraphe2 {
+    font-weight: normal;
+    font-size: 1.3em;
+    color: gray;
   }
-    &__btn {
-      background-color: #9356dc;
-      padding: 20px;
-      font-size: 1.3em;
-      color: white;
-      border-radius: 50px;
-      border: none;
-      box-shadow: 6px 6px 6px lightgray;
-      cursor: pointer;
-        &:hover {
-         transform: scale(1.015);
+  &__btn {
+    background-color: #9356dc;
+    padding: 20px;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 6px 6px 6px lightgray;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.015);
     }
   }
 }
@@ -255,27 +255,30 @@ h2 {
         font-size: 150%;
         margin-left: 10px;
 
-      .far
-      {
-        position: relative;
+        .far {
+          position: relative;
           left: 58%;
           font-size: 1.8em;
-        color: lightgray;
-         &:hover {
+          color: lightgray;
+          &:hover {
             color: transparent;
+          }
         }
+        .fas {
+          position: relative;
+          left: 49%;
+          font-size: 1.9em;
+          color: transparent;
+          &:hover {
+            color: #9356dc;
+            animation-duration: 1s;
+        }   
     }
-    .fas
-    {
-      position: relative;
-        left: 49%;
-        font-size: 1.9em;
-      color: transparent;
-        &:active {
-          color: #9356dc;
+}
+
+          }
+        }
       }
-    }
-  }
-}
-}
-}
+    
+  
+
