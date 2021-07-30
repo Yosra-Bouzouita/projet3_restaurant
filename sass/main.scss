@@ -10,7 +10,8 @@ $body-delay: $loader-dur;
 
   &__container {
     border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
+    border-top: 16px solid rgb(190, 153, 226);
+    border-top-color: radial-gradient(#e66465, #9198e5);
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -136,6 +137,7 @@ $body-delay: $loader-dur;
     cursor: pointer;
     &:hover {
       transform: scale(1.015);
+      background: radial-gradient(circle, lighten(#9356dc, 10) 0%, darken(#9356dc, 20) 100%);
     }
   }
 }
@@ -169,10 +171,12 @@ $body-delay: $loader-dur;
         color: #9356dc;
       }
     }
+  }
     .checked {
       position: relative;
       right: 10%;
     }
+  
     .fa-stack {
       position: relative;
       right: 15%;
@@ -182,12 +186,13 @@ $body-delay: $loader-dur;
       height: 40px;
       text-align: center;
     }
-  }
-  @media (max-width: 1500px) {
+  
+  @media all and (max-width: 1500px) {
     .fonctionnement__btn {
       padding-left: 20px;
       margin-bottom: 30px;
       width: 93%;
+    }
       .checked {
         position: relative;
         right: 30px;
@@ -197,11 +202,12 @@ $body-delay: $loader-dur;
         right: 40px;
       }
     }
-  }
-  @media (max-width: 530px) {
+  
+  @media all and (max-width: 530px) {
     .fonctionnement__btn {
       padding: 40px 60px 40px 3px;
       font-size: 1em;
+    }
       .checked {
         position: relative;
         right: 10px;
@@ -211,7 +217,6 @@ $body-delay: $loader-dur;
         right: 20px;
       }
     }
-  }
 }
 h2 {
   text-align: left;
@@ -221,30 +226,30 @@ h2 {
 .restaurants {
   width: 98.3%;
   position: absolute;
-  top: 1000px;
+  top: 900px;
   background-color: rgb(248, 248, 248);
   @include body-animation;
   @include body-logo;
   display: flex;
   flex-wrap: wrap;
   flex: 50%;
-  &__lapalette {
+  &__adresse {
     width: 40%;
     height: 450px;
     margin-top: 3%;
     margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 3%;
-    border-style: double;
+    margin-left: 6%;
+    margin-right: 1%;
     border-radius: 20px;
     border: none;
     box-shadow: 8px 7px 8px rgb(199, 194, 194), -8px 7px 8px rgb(199, 194, 194);
-    &:hover {
-      transform: scale(1.015);
-    }
-    .lienhebergement {
-      text-decoration: none;
-      color: black;
+       &:hover {
+         transform: scale(1.015);
+        }
+        
+      &--bouton {
+        text-decoration: none;
+        color: black;
       .image {
         width: 100%;
         height: 300px;
@@ -254,31 +259,61 @@ h2 {
       .paragrapheimage {
         font-size: 150%;
         margin-left: 10px;
-
-        .far {
-          position: relative;
-          left: 58%;
-          font-size: 1.8em;
-          color: lightgray;
-          &:hover {
-            color: transparent;
-          }
-        }
-        .fas {
-          position: relative;
-          left: 49%;
-          font-size: 1.9em;
-          color: transparent;
-          &:hover {
-            color: #9356dc;
-            animation-duration: 1s;
-        }   
+      }
     }
+  }
 }
 
-          }
-        }
-      }
-    
+.heartempty {
+  color: lightgray;
+  position: relative;
+  left: 90%;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  opacity: 1;
+  font-size: 24px;
+  bottom: 3.5rem;
+  width: 20px;
   
+}
 
+.heart {
+  position: relative;
+  left: 90%;
+  opacity: 0;
+  -webkit-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  transform-origin: bottom;
+  font-size: 25px;
+  bottom: 5.1rem;
+  width: 20px;
+ 
+    &:hover {
+      opacity: 1;
+      -webkit-transition: opacity 2s;
+      -o-transition: opacity 2s;
+      transition: opacity 2s;
+  }
+    &:hover::after {
+      content: "";
+      opacity: 1;
+  }
+  .fa-gradient {
+      background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#9356dc),
+      to(#ff79da)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media all and (max-width: 1500px) {
+  .restaurants {
+    position: absolute;
+    top: 1200px;
+ }
+}
