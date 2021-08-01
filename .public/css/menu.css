@@ -139,5 +139,21 @@ h4 {
   position: relative;
   top: 50px;
 }
+.block__btn .iconbouton {
+  background-color: #99e2d0;
+  padding: 5px;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+.block__btn .iconbouton .fa-check-circle {
+  background: white;
+  border-radius: 50%;
+  -webkit-font-smoothing: auto;
+  font-size: 1.5em;
+  color: #99e2d0;
+}
 
 /*# sourceMappingURL=menu.css.map */
