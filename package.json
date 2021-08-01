@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Joe Blow's portfolio",
   "main": "index.js",
+  
   "scripts": {
-    "sass": "sass ./sass/main.scss:.public/css/style.css "
-    
+    "sass": "sass ./sass/menu.scss:.public/css/menu.css  ./sass/main.scss:.public/css/style.css " 
   },
   "repository": {
     "type": "git",

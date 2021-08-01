@@ -163,30 +163,30 @@ $color-tertiary:#99E2D0;
   top: 235px;
   @include body-animation;
   @include body-logo;
-  &__paragraphe1 {
-    font-weight: bold;
-    font-size: 1.5em;
-    font-family: 'Roboto-Medium';
+       &__paragraphe1 {
+         font-weight: bold;
+         font-size: 1.5em;
+         font-family: 'Roboto-Medium';
   }
-  &__paragraphe2 {
-    font-weight: normal;
-    font-size: 1.3em;
-    color: gray;
-    font-family: "Roboto-Thin";
+       &__paragraphe2 {
+         font-weight: normal;
+         font-size: 1.3em;
+         color: gray;
+         font-family: "Roboto-Thin";
   }
-  &__btn {
-    background-color: $color-primary;
-    padding: 20px;
-    font-size: 1.3em;
-    color: white;
-    border-radius: 50px;
-    border: none;
-    box-shadow: 6px 6px 6px lightgray;
-    cursor: pointer;
-    font-family: "Roboto-Medium";
-    &:hover {
-      transform: scale(1.015);
-      background: radial-gradient(circle, lighten($color-primary, 20) 0%, darken($color-primary, 5) 100%);
+        &__btn {
+        background-color: $color-primary;
+        padding: 20px;
+        font-size: 1.3em;
+        color: white;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 6px 6px 6px lightgray;
+        cursor: pointer;
+        font-family: "Roboto-Medium";
+          &:hover {
+            transform: scale(1.015);
+            background: radial-gradient(circle, lighten($color-primary, 20) 0%, darken($color-primary, 5) 100%);
     }
   }
 }

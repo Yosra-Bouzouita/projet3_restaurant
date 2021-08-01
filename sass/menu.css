@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../../font/Roboto-Thin.ttf");
+  font-display: swap;
+}
+.Roboto-Thin {
+  font-family: "Roboto-Thin";
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../../font/Roboto-Light.ttf");
+  font-display: swap;
+}
+.Roboto-Light {
+  font-family: "Roboto-Light";
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../../font/Roboto-Medium.ttf");
+  font-display: swap;
+}
+.Roboto-Medium {
+  font-family: "Roboto-Medium";
+}
+
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("../../font/Shrikhand-Regular.ttf");
+  font-display: swap;
+}
+.Shrikhand-Regular {
+  font-family: " Shrikhand-Regular";
+}
+
+.header {
+  display: flex;
+}
+.header__logo {
+  text-align: center;
+  padding-left: 37%;
+  padding-right: 36%;
+}
+.header__logo .photo {
+  width: 100%;
+}
+.header__icon {
+  position: relative;
+  top: 7%;
+  left: 4%;
+  list-style-type: none;
+}
+.header__icon .flèche {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=menu.css.map */
