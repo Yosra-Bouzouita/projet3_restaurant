@@ -128,32 +128,42 @@ h4 {
   margin-right: 31px;
   font-family: "Roboto-Medium";
 }
-.block__btn:hover {
-  transform: scale(1.02);
+.block__btn:hover .iconbouton {
+  transform: scaleX(1);
 }
 .block__btn--paragraphe {
   line-height: 2em;
   width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .block__btn--paragraphe2 {
   position: relative;
   top: 50px;
+  left: 60px;
 }
 .block__btn .iconbouton {
+  height: 93%;
+  position: relative;
+  left: 10px;
+  border-radius: 0px 30px 30px 0px;
   background-color: #99e2d0;
   padding: 5px;
-  width: 4rem;
+  width: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-duration: 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
 }
 .block__btn .iconbouton .fa-check-circle {
-  background: white;
+  color: white;
   border-radius: 50%;
   -webkit-font-smoothing: auto;
   font-size: 1.5em;
-  color: #99e2d0;
+  background-color: #99e2d0;
 }
 
 /*# sourceMappingURL=menu.css.map */
