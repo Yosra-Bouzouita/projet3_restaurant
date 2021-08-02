@@ -43,15 +43,27 @@
   padding-right: 38%;
 }
 .header__logo .photo {
-  width: 130%;
+  width: 120%;
   margin-top: 20px;
+}
+@media all and (max-width: 900px) {
+  .header__logo .photo {
+    width: 150%;
+  }
+}
+@media all and (max-width: 600px) {
+  .header__logo .photo {
+    width: 250%;
+    position: relative;
+    right: 50%;
+  }
 }
 .header__icon {
   position: relative;
   left: 4%;
-  top: 20px;
+  top: 30px;
   list-style-type: none;
-  font-size: 130%;
+  font-size: 150%;
 }
 .header__icon .flèche {
   text-decoration: none;
@@ -66,12 +78,17 @@
 }
 
 .menu {
-  width: 98.6%;
+  width: 98.5%;
   display: block;
   background-color: #f8f8f8;
   border-radius: 60px 60px 0px 0px;
   position: absolute;
   top: 410px;
+}
+@media all and (max-width: 900px) {
+  .menu {
+    width: 97.6%;
+  }
 }
 .menu__titre {
   display: flex;
@@ -80,13 +97,17 @@
 .menu__titre .heartempty {
   font-size: 2em;
   position: relative;
-  top: 12px;
+  top: 25px;
   color: gray;
+}
+@media all and (max-width: 900px) {
+  .menu__titre .heartempty {
+    width: 15%;
+  }
 }
 .menu__titre .titre1 {
   width: 93%;
-  font-size: 0.7em;
-  margin-left: 22px;
+  margin-left: 2%;
   font-family: "Shrikhand-Regular";
 }
 @media all and (max-width: 1100px) {
@@ -109,11 +130,18 @@ h4 {
 }
 
 .entrées {
-  padding-left: 22px;
+  width: 98.6%;
+  padding-left: 2%;
 }
 
 .block {
   display: flex;
+}
+@media all and (max-width: 991px) {
+  .block {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .block__btn {
   display: flex;
@@ -125,45 +153,79 @@ h4 {
   border: none;
   box-shadow: 6px 6px 6px lightgray;
   cursor: pointer;
-  margin-right: 31px;
+  margin-right: 2%;
   font-family: "Roboto-Medium";
 }
+@media all and (max-width: 991px) {
+  .block__btn {
+    width: 95%;
+    margin-bottom: 30px;
+    height: 127px;
+  }
+}
 .block__btn:hover .iconbouton {
-  transform: scaleX(1);
+  width: 9rem;
+  opacity: 1;
+}
+@media all and (max-width: 991px) {
+  .block__btn:hover .iconbouton {
+    width: 9rem;
+  }
+}
+.block__btn:hover .iconbouton .fa-check-circle {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.block__btn:hover .block__btn--paragraphe2 {
+  transform: translateX(-50%);
 }
 .block__btn--paragraphe {
   line-height: 2em;
-  width: 85%;
+  width: 75%;
+  margin-left: 20px;
+  margin-right: 5%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
+@media all and (max-width: 991px) {
+  .block__btn--paragraphe {
+    width: 85%;
+  }
+}
 .block__btn--paragraphe2 {
   position: relative;
   top: 50px;
-  left: 60px;
+  transform: translateX(0);
+  transition-duration: 300ms;
 }
 .block__btn .iconbouton {
-  height: 93%;
+  height: 101%;
   position: relative;
-  left: 10px;
+  left: 8px;
   border-radius: 0px 30px 30px 0px;
   background-color: #99e2d0;
-  padding: 5px;
-  width: 7rem;
+  width: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 0.5s;
-  transform: scaleX(0);
+  transition-duration: 1s;
   transform-origin: right;
+  opacity: 0;
+}
+@media all and (max-width: 991px) {
+  .block__btn .iconbouton {
+    height: 127px;
+    width: 2px;
+  }
 }
 .block__btn .iconbouton .fa-check-circle {
   color: white;
   border-radius: 50%;
-  -webkit-font-smoothing: auto;
   font-size: 1.5em;
   background-color: #99e2d0;
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=menu.css.map */
