@@ -203,6 +203,9 @@ h4 {
 .block__btn--9 {
   animation-delay: 2700ms;
 }
+.block__btn--10 {
+  animation-delay: 3000ms;
+}
 @keyframes boutons {
   0% {
     opacity: 0;
@@ -258,7 +261,7 @@ h4 {
 .block__btn .iconbouton {
   height: 128px;
   position: relative;
-  left: 8px;
+  left: 1px;
   bottom: 1px;
   border-radius: 0px 30px 30px 0px;
   background-color: #99E2D0;

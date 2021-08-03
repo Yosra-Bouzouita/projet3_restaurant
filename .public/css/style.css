@@ -370,9 +370,12 @@ h2 {
   border-radius: 20px 20px 0px 0px;
 }
 .restaurants__adresse--bouton .lien .paragrapheimage {
+  position: relative;
+  top: 15px;
   font-size: 150%;
   margin-left: 10px;
   font-family: "Roboto-Light";
+  line-height: 1.5em;
 }
 
 .heartempty {
@@ -384,7 +387,7 @@ h2 {
   transform-origin: bottom;
   opacity: 1;
   font-size: 39px;
-  bottom: 4rem;
+  bottom: 3.2rem;
   width: 25px;
 }
 
@@ -396,7 +399,7 @@ h2 {
   -ms-transform-origin: bottom;
   transform-origin: bottom;
   font-size: 40px;
-  bottom: 6.8rem;
+  bottom: 5.7rem;
   width: 25px;
 }
 .heart:hover {
@@ -430,7 +433,7 @@ h2 {
     height: 400px;
   }
   .restaurants__adresse--bouton .image {
-    height: 220px;
+    height: 180px;
   }
   .restaurants__adresse .text {
     position: absolute;
