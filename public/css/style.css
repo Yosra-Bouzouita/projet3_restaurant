@@ -69,7 +69,7 @@
   overflow: hidden;
   background-size: cover;
   z-index: 1;
-  animation: logo 2s 2s both;
+  animation: logo 2s 300ms both;
   opacity: 0;
 }
 @keyframes logo {
@@ -107,7 +107,7 @@
   overflow: hidden;
   background-size: cover;
   z-index: 1;
-  animation: logo 2s 2s both;
+  animation: logo 2s 300ms both;
   opacity: 0;
 }
 @keyframes logo {
@@ -127,7 +127,7 @@
   overflow: hidden;
   background-size: cover;
   z-index: 1;
-  animation: logo 2s 2s both;
+  animation: logo 2s 300ms both;
   opacity: 0;
 }
 @keyframes logo {
@@ -165,7 +165,7 @@
   overflow: hidden;
   background-size: cover;
   z-index: 1;
-  animation: logo 2s 2s both;
+  animation: logo 2s 300ms both;
   opacity: 0;
 }
 @keyframes logo {
@@ -215,7 +215,7 @@
   overflow: hidden;
   background-size: cover;
   z-index: 1;
-  animation: logo 2s 2s both;
+  animation: logo 2s 300ms both;
   opacity: 0;
 }
 @keyframes logo {
@@ -305,7 +305,7 @@ h2 {
   overflow: hidden;
   background-size: cover;
   z-index: 1;
-  animation: logo 2s 2s both;
+  animation: logo 2s 300ms both;
   opacity: 0;
 }
 @keyframes logo {
@@ -463,7 +463,7 @@ h2 {
   overflow: hidden;
   background-size: cover;
   z-index: 1;
-  animation: logo 2s 2s both;
+  animation: logo 2s 300ms both;
   opacity: 0;
 }
 @keyframes logo {
