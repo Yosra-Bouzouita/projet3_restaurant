@@ -1,4 +1,4 @@
-h4 {
+ h4 {
     color: gray;
     font-family: "Roboto-Light";
     border-bottom: 2px solid $color-tertiary;
@@ -106,7 +106,7 @@ h4 {
          transform-origin: right;
          opacity: 0;
        @media all and (max-width: 991px) {
-         height: 127px;
+         height: 128px;
          width: 2px;
        }
        .fa-check-circle {
